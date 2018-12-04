@@ -2,6 +2,7 @@ package main
 
 import (
 	"adventofcode/2018/day_01"
+	"adventofcode/2018/day_02"
 	"adventofcode/2018/shared"
 	"flag"
 	"fmt"
@@ -25,6 +26,11 @@ func main() {
 		case 2:
 			result = day_01.FindFirstFrequencyRepeat(lines)
 		}
+  case 2:
+    switch *part {
+    case 1:
+      result = day_02.CalculateInventoryChecksum(lines)
+    }
 	default:
 		panic("Requested day not yet implemented.")
 	}
