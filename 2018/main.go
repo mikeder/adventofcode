@@ -29,5 +29,5 @@ func main() {
 		panic("Requested day not yet implemented.")
 	}
 
-	fmt.Printf("Result: %v\n", result)
+	fmt.Printf("Day %v Part %v Result: %v\n", *day, *part, result)
 }
