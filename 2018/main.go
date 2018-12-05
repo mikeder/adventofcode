@@ -26,11 +26,13 @@ func main() {
 		case 2:
 			result = day_01.FindFirstFrequencyRepeat(lines)
 		}
-  case 2:
-    switch *part {
-    case 1:
-      result = day_02.CalculateInventoryChecksum(lines)
-    }
+	case 2:
+		switch *part {
+		case 1:
+			result = day_02.CalculateInventoryChecksum(lines)
+		case 2:
+			result = day_02.FindPrototypeFabricBoxes(lines)
+		}
 	default:
 		panic("Requested day not yet implemented.")
 	}
