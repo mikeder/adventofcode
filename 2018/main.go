@@ -1,9 +1,9 @@
 package main
 
 import (
-	"adventofcode/2018/day_01"
-	"adventofcode/2018/day_02"
-	"adventofcode/2018/shared"
+	"github.com/mikeder/adventofcode/2018/day_01"
+	"github.com/mikeder/adventofcode/2018/day_02"
+	"github.com/mikeder/adventofcode/2018/shared"
 	"flag"
 	"fmt"
 )
