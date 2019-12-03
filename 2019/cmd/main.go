@@ -3,7 +3,9 @@ package main
 import (
 	"flag"
 	"fmt"
+
 	"github.com/mikeder/adventofcode/2019/internal/day1"
+	"github.com/mikeder/adventofcode/2019/internal/day2"
 )
 
 func main() {
@@ -32,6 +34,21 @@ func solve(day int, part int) int64 {
 			return answer
 		case 2:
 			answer, err := day1.Problem2()
+			if err != nil {
+				panic(err)
+			}
+			return answer
+		}
+	case 2:
+		switch part {
+		case 1:
+			answer, err := day2.Problem1()
+			if err != nil {
+				panic(err)
+			}
+			return answer
+		case 2:
+			answer, err := day2.Problem2()
 			if err != nil {
 				panic(err)
 			}
